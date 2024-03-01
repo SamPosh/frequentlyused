@@ -1,4 +1,4 @@
-#50 useful bash scripts
+# 50 useful bash scripts
 
 Hey there! So, you’ve heard of Bash before, right? It’s like the “cool kid” of the command-line world, somewhat akin to the Windows Command Prompt (CMD), but with a twist. If you’re nodding along but haven’t really delved into it, you’re in for a treat!
 
@@ -8,7 +8,7 @@ Even if you’re on a Windows machine, fear not! You can tap into the power of B
 
 That said, Here’s a list of 50 common Bash scripts along with explanations of their use that you could try since we learn by doing:
 
-##Hello World:
+## Hello World:
 
 ```
 #!/bin/bash
@@ -16,7 +16,7 @@ echo "Hello, World!"
 Explanation: A basic script that prints “Hello, World!” to the terminal.
 ```
 
-##File Backup
+## File Backup
 
 ```
 #!/bin/bash
@@ -27,13 +27,13 @@ backup_file="backup_$timestamp.tar.gz"
 tar -czvf "$backup_dir/$backup_file" "$source_dir"
 Explanation: Creates a timestamped backup of a directory using tar compression.
 ```
-##Directory Listing
+## Directory Listing
 
 #!/bin/bash
 ls -l
 Explanation: Lists files and directories in the current directory with details.
 
-##File Count
+## File Count
 
 ```
 #!/bin/bash
@@ -42,7 +42,7 @@ echo "Number of files: $file_count"
 Explanation: Counts the number of files in the current directory.
 ```
 
-##Disk Usage
+## Disk Usage
 
 ```
 #!/bin/bash
@@ -50,7 +50,7 @@ df -h
 Explanation: Displays disk usage information.
 ```
 
-##System Info
+## System Info
 
 ```
 #!/bin/bash
@@ -58,7 +58,7 @@ uname -a
 Explanation: Prints system information, including the kernel version
 ```
 
-##File Rename
+## File Rename
 
 ```
 #!/bin/bash
@@ -68,7 +68,7 @@ mv "$old_name" "$new_name"
 Explanation: Renames a file from “old.txt” to “new.txt.”
 ```
 
-##File Permissions
+## File Permissions
 
 ```
 #!/bin/bash
@@ -77,7 +77,7 @@ chmod +x "$file"
 Explanation: Grants execute permission to a file.
 ```
 
-##User Info
+## User Info
 
 ```
 #!/bin/bash
@@ -86,7 +86,7 @@ echo "Current user: $username"
 Explanation: Prints the username of the current user.
 ```
 
-##Process List
+## Process List
 
 ```
 #!/bin/bash
@@ -94,7 +94,7 @@ ps aux
 Explanation: Lists all running processes.
 ```
 
-##Process Kill
+## Process Kill
 
 ```
 #!/bin/bash
@@ -103,14 +103,14 @@ kill -9 "$process_id"
 Explanation: Kills a process by its process ID.
 ```
 
-##Check Internet Connection
+## Check Internet Connection
 ```
 #!/bin/bash
 ping -c 5 google.com
 Explanation: Checks internet connectivity by pinging Google.
 ```
 
-##Disk Cleanup
+## Disk Cleanup
 
 ```
 #!/bin/bash
@@ -119,7 +119,7 @@ rm -rf /var/log/*
 Explanation: Displays disk usage of log files and then deletes them
 ```
 
-##System Shutdown
+## System Shutdown
 
 ```
 #!/bin/bash
@@ -127,13 +127,13 @@ shutdown -h now
 Explanation: Shuts down the system immediately.
 ```
 
-##System Reboot
+## System Reboot
 ```
 #!/bin/bash
 reboot
 Explanation: Reboots the system.
 ```
-##File Search
+## File Search
 
 ```
 #!/bin/bash
@@ -143,7 +143,7 @@ grep -r "$search_term" "$search_dir"
 Explanation: Searches for a specified pattern recursively in files.
 ```
 
-##Disk Space Alert
+## Disk Space Alert
 ```
 #!/bin/bash
 threshold=90
@@ -156,7 +156,7 @@ fi
 Explanation: Monitors disk space usage and provides an alert if it exceeds a specified threshold.
 ```
 
-##Check Service Status
+## Check Service Status
 ```
 #!/bin/bash
 service_name="nginx"
@@ -168,7 +168,7 @@ fi
 Explanation: Checks if a system service is running.
 ```
 
-##System Backup Script
+## System Backup Script
 ```
 #!/bin/bash
 source_dir="/path/to/source"
@@ -179,7 +179,7 @@ tar -czvf "$backup_dir/$backup_file" "$source_dir"
 Explanation: Creates a timestamped backup of a directory, similar to the intermediate script but without user prompts.
 ```
 
-##Log Rotation
+## Log Rotation
 ```
 #!/bin/bash
 log_file="/path/to/logfile.log"
@@ -194,7 +194,7 @@ fi
 Explanation: Rotates log files by renaming them when they reach a specified size.
 ```
 
-##User Management
+## User Management
 ```
 #!/bin/bash
 username="newuser"
@@ -204,7 +204,7 @@ echo "$username:$password" | chpasswd
 Explanation: Creates a new user and sets their password.
 ```
 
-##File Encryption
+## File Encryption
 ```
 #!/bin/bash
 file_to_encrypt="file.txt"
@@ -212,7 +212,7 @@ gpg -c "$file_to_encrypt"
 Explanation: Encrypts a file using GPG.
 ```
 
-##File Decryption
+## File Decryption
 ```
 #!/bin/bash
 encrypted_file="file.txt.gpg"
@@ -220,7 +220,7 @@ gpg -d "$encrypted_file" > "decrypted_file.txt"
 Explanation: Decrypts an encrypted file.
 ```
 
-##File Compression
+## File Compression
 ```
 #!/bin/bash
 compressed_file="compressed_file.tar.gz"
@@ -228,7 +228,7 @@ tar -xzvf "$compressed_file"
 Explanation: Compresses a file using tar and gzip.
 ```
 
-##File Decompression
+## File Decompression
 ```
 #!/bin/bash
 compressed_file="compressed_file.tar.gz"
@@ -236,7 +236,7 @@ tar -xzvf "$compressed_file"
 Explanation: Decompresses a file compressed with tar and gzip.
 ```
 
-##CSV File Processing
+## CSV File Processing
 ```
 #!/bin/bash
 input_csv="data.csv"
@@ -245,7 +245,7 @@ awk -F ',' '{print $1,$2}' "$input_csv" > "$output_file"
 Explanation: Extracts specific columns from a CSV file and saves them to a new file.
 ```
 
-##Log Analysis
+## Log Analysis
 ```
 #!/bin/bash
 log_file="access.log"
@@ -256,7 +256,7 @@ echo "Total Errors: $error_count"
 Explanation: Analyzes an access log file, counting unique IP addresses and error occurrences.
 ```
 
-##Send Email Alert
+## Send Email Alert
 ```
 #!/bin/bash
 email="user@example.com"
@@ -266,7 +266,7 @@ echo "$message" | mail -s "$subject" "$email"
 Explanation: Sends an email alert.
 ```
 
-##Database Backup
+## Database Backup
 ```
 #!/bin/bash
 db_name="mydb"
@@ -275,21 +275,21 @@ mysqldump -u username -p$password "$db_name" > "$backup_file"
 Explanation: Creates a MySQL database backup.
 ```
 
-##SSH Key Generation
+## SSH Key Generation
 ```
 #!/bin/bash
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/mykey
 Explanation: Generates an SSH key pair.
 ```
 
-##SSH Key Copy
+## SSH Key Copy
 ```
 #!/bin/bash
 ssh-copy-id user@hostname
 Explanation: Copies an SSH public key to a remote server for passwordless login.
 ```
 
-##File Comparison
+## File Comparison
 ```
 #!/bin/bash
 file1="file1.txt"
@@ -302,7 +302,7 @@ fi
 Explanation: Compares two files to check if they are identical.
 ```
 
-##Cron Job Example
+## Cron Job Example
 ```
 #!/bin/bash
 backup_dir="/path/to/backup"
@@ -312,7 +312,7 @@ tar -czvf "$backup_dir/$backup_file" /path/to/source
 Explanation: A script that can be scheduled as a cron job to automate backups at regular intervals.
 ```
 
-##Folder Synchronization
+## Folder Synchronization
 ```
 #!/bin/bash
 source_dir="/path/to/source"
@@ -321,7 +321,7 @@ rsync -av "$source_dir/" "$destination_dir/"
 Explanation: Synchronizes the contents of two directories using rsync.
 ```
 
-##URL Download
+## URL Download
 ```
 #!/bin/bash
 url="https://example.com/file.txt"
@@ -330,7 +330,7 @@ wget "$url" -O "$output_file"
 Explanation: Downloads a file from a URL using wget.
 ```
 
-##Input Validation
+## Input Validation
 ```
 #!/bin/bash
 read -p "Enter a number: " number
@@ -342,7 +342,7 @@ fi
 Explanation: Validates user input to ensure it is a number.
 ```
 
-##String Manipulation
+## String Manipulation
 ```
 #!/bin/bash
 string="Hello, World!"
@@ -351,7 +351,7 @@ echo "$uppercase_string"
 Explanation: Converts a string to uppercase.
 ```
 
-##File Watcher
+## File Watcher
 ```
 #!/bin/bash
 directory="/path/to/watch"
@@ -362,7 +362,7 @@ done
 Explanation: Watches a directory for file changes using inotifywait.
 ```
 
-##JSON Parsing
+## JSON Parsing
 ```
 #!/bin/bash
 json_string='{"name": "John", "age": 30}'
@@ -372,7 +372,7 @@ echo "Name: $name, Age: $age"
 Explanation: Parses JSON data and extracts specific fields using jq.
 ```
 
-##Zip File Compression
+## Zip File Compression
 ```
 #!/bin/bash
 file_to_compress="file.txt"
@@ -380,7 +380,7 @@ zip "compressed_file.zip" "$file_to_compress"
 Explanation: Compresses a file using ZIP compression.
 ```
 
-##Zip File Extraction
+## Zip File Extraction
 ```
 #!/bin/bash
 zip_file="compressed_file.zip"
@@ -388,7 +388,7 @@ unzip "$zip_file"
 Explanation: Extracts files from a ZIP archive.
 ```
 
-##PDF Conversion
+## PDF Conversion
 ```
 #!/bin/bash
 input_file="document.docx"
@@ -397,7 +397,7 @@ libreoffice --headless --convert-to pdf "$input_file"
 Explanation: Converts a document to PDF using LibreOffice.
 ```
 
-##CSV to Excel
+## CSV to Excel
 ```
 #!/bin/bash
 input_csv="data.csv"
@@ -406,7 +406,7 @@ ssconvert "$input_csv" "$output_xlsx"
 Explanation: Converts a CSV file to an Excel (XLSX) file using Gnumeric’s ss convert.
 ```
 
-##File Splitting
+## File Splitting
 ```
 #!/bin/bash
 input_file="large_file.txt"
@@ -414,7 +414,7 @@ split -b 1M "$input_file" "split_file"
 Explanation: Joins split files to reconstruct the original file.
 ```
 
-##File Joining
+## File Joining
 
 ```
 #!/bin/bash
@@ -422,7 +422,7 @@ cat split_file* > "large_file.txt"
 Explanation: Joins split files to reconstruct the original file.
 ```
 
-##IP Address Validation
+## IP Address Validation
 ```
 #!/bin/bash
 read -p "Enter an IP address: " ip_address
@@ -434,7 +434,7 @@ fi
 Explanation: Validates user input as an IP address.
 ```
 
-##URL Validation
+## URL Validation
 ```
 #!/bin/bash
 read -p "Enter a URL: " url
@@ -446,14 +446,14 @@ fi
 Explanation: Validates user input as a URL.
 ```
 
-##File Permissions Report
+## File Permissions Report
 ```
 #!/bin/bash
 find /path/to/files -type f -exec ls -l {} \; > permissions_report.txt
 Explanation: Creates a report of file permissions for all files in a directory
 ```
 
-##Password Generator
+## Password Generator
 ```
 #!/bin/bash
 length=12
