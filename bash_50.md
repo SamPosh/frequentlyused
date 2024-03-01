@@ -1,3 +1,5 @@
+#50 useful bash scripts
+
 Hey there! So, you’ve heard of Bash before, right? It’s like the “cool kid” of the command-line world, somewhat akin to the Windows Command Prompt (CMD), but with a twist. If you’re nodding along but haven’t really delved into it, you’re in for a treat!
 
 Think of Bash as your trusty sidekick for navigating and controlling your computer via text commands. It’s used by virtually every major tech company and system developers worldwide. You see, the magic of Bash lies in its simplicity and efficiency. With just a few well-placed keystrokes, you can zip through tasks, manage files, and automate processes much faster than clicking around with a mouse and a graphical user interface (GUI).
