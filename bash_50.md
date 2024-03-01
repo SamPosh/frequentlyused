@@ -29,9 +29,11 @@ Explanation: Creates a timestamped backup of a directory using tar compression.
 ```
 ## Directory Listing
 
+```
 #!/bin/bash
 ls -l
 Explanation: Lists files and directories in the current directory with details.
+```
 
 ## File Count
 
